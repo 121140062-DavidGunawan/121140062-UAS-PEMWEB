@@ -1,16 +1,16 @@
-**#Link Hosting : https://pemwebdavid.000webhostapp.com**
+**# Link Hosting : https://pemwebdavid.000webhostapp.com**
 
+---
 
+## Ujian Akhir Semester Pemrograman Web RB
 
-##Ujian Akhir Semester Pemrograman Web RB
+## Nama : David Gunawan
 
-##Nama : David Gunawan
+## NIM : 121140062
 
-##NIM : 121140062
+---
 
-
-
-**###Bagian 1: Client-side Programming**
+**### Bagian 1: Client-side Programming**
 
 **1.1**
 
@@ -37,8 +37,9 @@ Jadi, total dari event yang ada untuk menghandle form ada 3 yaitu : Detail, Remo
 data yang dilakukan saat submit pada form input dan form edit akan divalidasi terlebih dahulu inputannya pada javascript.
 ketika terdapat inputan yang tidak sesuai maka javascript akan alert letak kesalahan fieldnya. jika tidak, maka dilakukan proses ke php
 
+---
 
-**###Bagian 2: Server-side Programming**
+**### Bagian 2: Server-side Programming**
 
 **2.1**
 
@@ -57,44 +58,33 @@ Terdapat sebuah object PHP bernama Asdos pada script data.php. terdapat 5 metode
 data Asdos pada database. dikarenakan website yang saya buat adalah sebuah form registerasi, maka metode yang digunakan adalah Simpan Data,
 Lihat data, Hapus data, Update Data, dan fungsi untuk melakukan koneksi dengan database.
 
+---
 
-**###Bagian 3: Database Management**
+**### Bagian 3: Database Management**
 
 **3.1**
 
 Pada localhost, langkah-langkah dalam membuat database yaitu
 
-mysql -u root -p (Mengakses MySQL dengan username root dan tanpa password)
+- mysql -u root -p (Mengakses MySQL dengan username root dan tanpa password)
 
-CREATE DATABASE data_registerasi; (Membuat Database data_registerasi)
+- CREATE DATABASE data_registerasi; (Membuat Database data_registerasi)
 
-USE data_registerasi; (Mengakses database yang baru saja dibuat)
+- USE data_registerasi; (Mengakses database yang baru saja dibuat)
 
-CREATE TABLE info_user (
-
+- CREATE TABLE info_user (
   nama VARCHAR(50) NOT NULL,
-  
   nim INT(20) NOT NULL,
-  
   jeniskelamin VARCHAR(20) NOT NULL,
-  
   tanggallahir DATE NOT NULL,
-  
   email VARCHAR(50) NOT NULL,
-  
   ipk FLOAT NOT NULL,
-  
   jenisbrowser VARCHAR(30) NOT NULL,
-
   ipaddress VARCHAR(20) NOT NULL,
-  
   PRIMARY KEY (nim)
-  
 ) ENGINE = InnoDB;
 
-
 Maka tabel info_user pada database data_registerasi berhasil dibuat dan bisa digunakan.
-
 
 
 **3.2**
@@ -120,6 +110,8 @@ define('DB_USERNAME', 'id21680630_root');
 define('DB_PASSWORD', 'Qnrv2*53b');        
 define('DB_NAME', 'id21680630_data_registerasi');  
 
+$conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
 konstanta yang dibutuhkan untuk melakukan koneksi ke localhost ataupun database penyedia hosting 
 disimpan pada suatu global variabel.
 
@@ -130,21 +122,25 @@ Pada website yang sudah saya buat, terdapat 4 query SQL yang digunakan untuk men
 
 1. Tambah Data
 "INSERT INTO info_user (nama, nim, jeniskelamin, tanggallahir, email, ipk, jenisbrowser, ipaddress) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
+
 Query tersebut digunakan ketika ingin menambahkan data ke tabel info_user.
 
 2. Update Data
 "UPDATE info_user SET nama=?, nim=?, jeniskelamin=?, tanggallahir=?, email=?, ipk=?, jenisbrowser=?, ipaddress=? WHERE nim=?"
+
 Query tersebut digunakan ketika ingin mengupdate data yang sudah ada pada tabel info_user
 
 3. Hapus Data
 "DELETE FROM info_user WHERE nim = ?"
+
 Query tersebut digunakan ketika ingin menghapus data dari tabel info_user dengan ketentuan nim.
 
 4. Lihat data
 "SELECT * FROM info_user"
+
 Query tersebut digunakan ketika ingin mengakses seluruh data yang ada pada tabel info_user untuk ditampilkan pada website
 
-
+---
 
 **###Bagian 4: State Management**
 
@@ -155,6 +151,7 @@ untuk menyimpan ketika user pertama kali mengakses website. maka saya menyimpan 
 website untuk pertama kali. Maka ketika user melakukan reload page, state dari user tetap sudah mengakses website.
 
 **4.2**
+
 Pada website yang sudah saya buat, saya memanfaatkan cookie untuk menyimpan nama user yang terakhir diregisterasikan. setiap kali user mengakses
 website, terdapat alert welcome. jika user sudah pernah melakukan registerasi, maka alert welcome akan menampilkan nama yang ada pada cookie. dan jika user belum
 pernah melakukan registerasi ataupun data dari registerasinya dihapus, maka alert welcome akan menganggap user baru pertama kali mengakses website yang sudah saya
@@ -167,8 +164,9 @@ nama tersebut sudah pernah melakukan registerasi.
 setiap user menambahkan, mengupdate, dan menghapus data dari database. cookie dan local storage juga akan beradaptasi dengan perubahan tersebut
 karena pada javascript terdapat fungsi untuk menetapkan, mendapatkan, dan menghapus cookie ataupun local storage.
 
+---
 
-**###Bagian Bonus: Hosting Aplikasi Web**
+**### Bagian Bonus: Hosting Aplikasi Web**
 
 **1** Langkah langkah hosting
 dengan mengasumsi saya sudah memilih penyedia hosting website dan melakukan registerasi pada websitenya, langkah-langkah hosting

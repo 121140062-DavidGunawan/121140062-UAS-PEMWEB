@@ -1,4 +1,4 @@
-**# Link Hosting : https://pemwebdavid.000webhostapp.com**
+# Link Hosting : https://pemwebdavid.000webhostapp.com
 
 ---
 
@@ -10,7 +10,7 @@
 
 ---
 
-**### Bagian 1: Client-side Programming**
+### Bagian 1: Client-side Programming
 
 **1.1**
 
@@ -39,7 +39,7 @@ ketika terdapat inputan yang tidak sesuai maka javascript akan alert letak kesal
 
 ---
 
-**### Bagian 2: Server-side Programming**
+### Bagian 2: Server-side Programming
 
 **2.1**
 
@@ -60,7 +60,7 @@ Lihat data, Hapus data, Update Data, dan fungsi untuk melakukan koneksi dengan d
 
 ---
 
-**### Bagian 3: Database Management**
+### Bagian 3: Database Management
 
 **3.1**
 
@@ -142,7 +142,7 @@ Query tersebut digunakan ketika ingin mengakses seluruh data yang ada pada tabel
 
 ---
 
-**###Bagian 4: State Management**
+### Bagian 4: State Management
 
 **4.1**
 
@@ -166,7 +166,7 @@ karena pada javascript terdapat fungsi untuk menetapkan, mendapatkan, dan mengha
 
 ---
 
-**### Bagian Bonus: Hosting Aplikasi Web**
+### Bagian Bonus: Hosting Aplikasi Web
 
 **1** Langkah langkah hosting
 dengan mengasumsi saya sudah memilih penyedia hosting website dan melakukan registerasi pada websitenya, langkah-langkah hosting

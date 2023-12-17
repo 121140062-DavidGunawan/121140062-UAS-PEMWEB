@@ -120,22 +120,29 @@ disimpan pada suatu global variabel.
 
 Pada website yang sudah saya buat, terdapat 4 query SQL yang digunakan untuk mengakses ataupun memanipulasi data yaitu
 
-1. Tambah Data
+- Tambah Data
+
 "INSERT INTO info_user (nama, nim, jeniskelamin, tanggallahir, email, ipk, jenisbrowser, ipaddress) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
 
 Query tersebut digunakan ketika ingin menambahkan data ke tabel info_user.
 
-2. Update Data
+
+- Update Data
+   
 "UPDATE info_user SET nama=?, nim=?, jeniskelamin=?, tanggallahir=?, email=?, ipk=?, jenisbrowser=?, ipaddress=? WHERE nim=?"
 
 Query tersebut digunakan ketika ingin mengupdate data yang sudah ada pada tabel info_user
 
-3. Hapus Data
+
+- Hapus Data
+   
 "DELETE FROM info_user WHERE nim = ?"
 
 Query tersebut digunakan ketika ingin menghapus data dari tabel info_user dengan ketentuan nim.
 
-4. Lihat data
+
+- Lihat data
+   
 "SELECT * FROM info_user"
 
 Query tersebut digunakan ketika ingin mengakses seluruh data yang ada pada tabel info_user untuk ditampilkan pada website
